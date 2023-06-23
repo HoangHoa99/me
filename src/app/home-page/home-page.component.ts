@@ -13,8 +13,6 @@ export class HomePageComponent {
 
   ngOnInit() {
     this.sectionSelected('about');
-
-    this.typingGreeting();
   }
 
   resetSection() {
@@ -27,6 +25,13 @@ export class HomePageComponent {
   }
 
   sectionSelected(sectionName: string) {
+    if ('about' === sectionName) {
+      this.greetingMessage = 'Bo';
+
+      setTimeout(() => {
+        this.typingGreeting();
+      }, 2000);
+    }
     this.resetSection();
     this.selectedSection[sectionName] = true;
   }

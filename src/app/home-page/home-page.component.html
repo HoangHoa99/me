@@ -17,22 +17,112 @@
       </div>
 
       <div class="content-section about" *ngIf="selectedSection.about">
-        <h1>{{greetingMessage}}</h1>
+        <h1>{{ greetingMessage }}</h1>
         <div class="personal-desc">
-            <span>I am Bo, I'am a full-stack web developer based in Pleiku, Vietnam</span>
+          <span>
+            I am Bo, I'am a full-stack web developer based in Pleiku, Vietnam
+          </span>
         </div>
       </div>
-      <div class="content-section experience"*ngIf="selectedSection.experiences">
-        experiences
+      <div
+        class="content-section experience"
+        *ngIf="selectedSection.experiences"
+      >
+        <div class="experience-left">
+          <h3>Experiences</h3>
+          <span
+            >My working experiences since 2019.
+            <a
+              href="https://drive.google.com/file/d/1R0XOOIrYvRnKlppyFEWu75hWcG-3LRge/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              >More detail!</a
+            ></span
+          >
+        </div>
+        <div class="experience-right">
+          <!-- inceptionlabs -->
+          <div class="work third">
+            <span class="period">NOV 2021 - FEB 2023</span>
+            <div class="desc">
+              <h4>Full-stack Web Developer</h4>
+              <span
+                >InceptionLabs
+                <a
+                  href="https://inceptionlabs.com.vn/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-long-arrow-right"></i> </a
+              ></span>
+              <div class="skills">
+                <ul>
+                  <li>Play framework</li>
+                  <li>MySQL</li>
+                  <li>Angular</li>
+                  <li>TypeScript</li>
+                  <li>nginx</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- citynow -->
+          <div class="work second">
+            <span class="period">JUL 2020 - OCT 2022</span>
+            <div class="desc">
+              <h4>Backend Web Developer</h4>
+              <span
+                >Citynow
+                <a
+                  href="https://citynow.vn/home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-long-arrow-right"></i> </a
+              ></span>
+              <div class="skills">
+                <ul>
+                  <li>Java</li>
+                  <li>Spring framework</li>
+                  <li>PostgreSQL</li>
+                  <li>SOLID</li>
+                  <li>Git</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- tanca -->
+          <div class="work first">
+            <span class="period">OCT 2019 - APR 2020</span>
+            <div class="desc">
+              <h4>Backend Web Developer</h4>
+              <span
+                >Tanca
+                <a
+                  href="https://tanca.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-long-arrow-right"></i> </a
+              ></span>
+              <div class="skills">
+                <ul>
+                  <li>Laravel</li>
+                  <li>PHP</li>
+                  <li>RestAPI</li>
+                  <li>OOP</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="content-section blog" *ngIf="selectedSection.blog">
-        blog
-      </div>
+      <div class="content-section blog" *ngIf="selectedSection.blog">blog</div>
       <div class="content-section contact" *ngIf="selectedSection.contact">
         contact
       </div>
-      
-      
     </div>
   </div>
 </div>
