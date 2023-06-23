@@ -1,1 +1,38 @@
-portfolio
+<div class="container flex-center">
+  <div class="content flex-center">
+    <div class="content-inter">
+      <div class="top-left-logo">
+        <img src="../../assets/images/logo.png" alt="Page logo" />
+      </div>
+      <div class="bottom-right-signature">
+        <span>&COPY; 2023 Hoang Hoa</span>
+      </div>
+      <div class="top-right-menu">
+        <ul>
+          <li (click)="sectionSelected('about')">about</li>
+          <li (click)="sectionSelected('experiences')">experiences</li>
+          <li (click)="sectionSelected('blog')">blog</li>
+          <li (click)="sectionSelected('contact')">contact</li>
+        </ul>
+      </div>
+
+      <div class="content-section about" *ngIf="selectedSection.about">
+        <h1>{{greetingMessage}}</h1>
+        <div class="personal-desc">
+            <span>I am Bo, I'am a full-stack web developer based in Pleiku, Vietnam</span>
+        </div>
+      </div>
+      <div class="content-section experience"*ngIf="selectedSection.experiences">
+        experiences
+      </div>
+      <div class="content-section blog" *ngIf="selectedSection.blog">
+        blog
+      </div>
+      <div class="content-section contact" *ngIf="selectedSection.contact">
+        contact
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
