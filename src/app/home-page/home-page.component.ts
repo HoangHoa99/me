@@ -10,6 +10,8 @@ export class HomePageComponent {
   selectedSection: any;
   greetingMessage: string = 'Bo';
   interval: any;
+  collapse: boolean = false;
+  isMobile: boolean = false;
 
   urlMap = {
     "LINKEDIN": "https://www.linkedin.com/in/thaihoahoang/",
@@ -27,6 +29,11 @@ export class HomePageComponent {
 
   ngOnInit() {
     this.sectionSelected('about');
+
+    let userAgent = navigator.userAgent;
+    if(/Android|iPhone/.test(userAgent)) {
+      this.isMobile = !this.isMobile;
+    }
   }
 
   resetSection() {
@@ -39,27 +46,12 @@ export class HomePageComponent {
   }
 
   sectionSelected(sectionName: string) {
-    if ('about' === sectionName) {
-      this.greetingMessage = 'Bo';
-
-      setTimeout(() => {
-        this.typingGreeting();
-      }, 2000);
-    }
+    this.collapse = !this.collapse;
     this.resetSection();
     this.selectedSection[sectionName] = true;
   }
 
-  typingGreeting() {
-    let message = 'njour!';
-    let i = 0;
-    this.interval = setInterval(() => {
-      this.greetingMessage += message.charAt(i).toString();
-      i++;
-      if (this.greetingMessage.length == 8) {
-        clearInterval(this.interval);
-      }
-      console.log(this.greetingMessage);
-    }, 800);
+  collapseMenu() {
+    this.collapse = !this.collapse;
   }
 }

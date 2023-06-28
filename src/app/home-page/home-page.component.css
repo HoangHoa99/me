@@ -77,6 +77,14 @@
   right: 5px;
 }
 
+.top-right-menu img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
 .top-right-menu ul {
   list-style: none;
 }
@@ -105,7 +113,10 @@
   left: 50px;
 }
 
-.about, .experience, .blog, .contact {
+.about,
+.experience,
+.blog,
+.contact {
   animation-name: appear;
   animation-duration: 2s;
 }
@@ -118,7 +129,7 @@
   align-items: flex-start;
 }
 
-.about h1 {
+/* .about h1 {
   font-size: 60px;
   font-weight: 600;
   overflow: hidden;
@@ -126,6 +137,34 @@
   white-space: nowrap;
   letter-spacing: 5px;
   animation: blink-caret 0.9s step-end infinite;
+} */
+
+.greeting {
+  display: flex;
+  color: #EE4747;
+  font-size: 65px;
+  font-weight: 600;
+}
+
+.greeting .dynamic-text {
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.greeting span{
+  position: relative;
+}
+
+.greeting span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #e5e5e5;
+  border-left: 5px solid #EE4747;
+  left: 0;
+  animation: typing 2s steps(12) infinite;
 }
 
 .about .personal-desc {
@@ -225,8 +264,8 @@ a {
 
 .desc ul li {
   display: inline;
-  background-color: #E08119;
-  border-radius: .5rem;
+  background-color: #e08119;
+  border-radius: 0.5rem;
   margin-right: 5px;
   margin-bottom: 5px;
   padding: 5px 8px;
@@ -236,7 +275,7 @@ a {
 
 /* blog */
 .blog h1 {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 500;
 }
 
@@ -265,15 +304,25 @@ a {
   margin: 5px 15px;
 }
 
-.contact svg, .contact img {
+.contact svg,
+.contact img {
   height: 50px;
   width: 50px;
-  transition: transform .5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   cursor: pointer;
 }
 
-.contact svg:hover, .contact img:hover {
+.contact svg:hover,
+.contact img:hover {
   transform: scale(1.2);
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
 }
 
 /* keyframe */
@@ -289,6 +338,13 @@ a {
   }
 }
 
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
 /* appear animation */
 @keyframes appear {
   from {
@@ -296,5 +352,145 @@ a {
   }
   to {
     opacity: 1;
+  }
+}
+
+/* responsive design */
+
+@media screen and (max-width: 420px) {
+
+  .visible {
+    visibility: hidden;
+  }
+
+  .invisible {
+    visibility: visible;
+  }
+
+  .content {
+    width: 90vw;
+    height: 90vh;
+  }
+
+  .content-section {
+    width: 95%;
+    height: 90%;
+    left: 10px;
+  }
+
+  .about h1 {
+    font-size: 55px;
+  }
+
+  .about .personal-desc {
+    padding: 21px;
+    text-align: justify;
+  }
+
+  .top-right-menu {
+    position: relative;
+    top: unset;
+    right: unset;
+  }
+
+  .top-right-menu ul {
+    position: absolute;
+    width: 97%;
+    right: 5px;
+    top: 45px;
+    z-index: 2;
+    background-color: #e5e5e5;
+    animation-name: appear;
+    animation-duration: .5s;
+  }
+
+  .top-right-menu ul li {
+    width: unset;
+  }
+
+  .experience {
+    flex-direction: column;
+  }
+
+  .experience-left,
+  .experience-right {
+    width: unset;
+    height: unset;
+    position: unset;
+    margin-bottom: 20px;
+  }
+
+  .experience-left h3 {
+    font-size: 35px;
+  }
+
+  .experience-left span {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .work .period {
+    width: 30%;
+  }
+
+  .work .desc {
+    width: 65%;
+    padding: 10px;
+  }
+
+  .blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-content {
+    height: 60%;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+  }
+
+  .contact h3 {
+    font-weight: 100;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 421px) {
+  .content {
+    width: 90vw;
+    height: 90vh;
+  }
+
+  .content-section {
+    width: 90%;
+    height: 80%;
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .experience {
+    flex-direction: column;
+  }
+
+  .experience-left,
+  .experience-right {
+    width: unset;
+    right: unset;
+    bottom: unset;
+    height: unset;
+    position: unset;
+  }
+
+  .experience-left {
+    height: 25%;
+  }
+
+  .experience-right {
+    height: 75%;
+  }
+
+  .contact-content {
+    height: 60%;
   }
 }

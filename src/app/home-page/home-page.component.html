@@ -8,7 +8,16 @@
         <span>&COPY; 2023 Hoang Hoa</span>
       </div>
       <div class="top-right-menu">
-        <ul>
+        <img src="https://i.ibb.co/9YZHVDF/menu.png" class="invisible" alt="Menu logo" *ngIf="collapse" (click)="collapseMenu()"/>
+        <img src="https://i.ibb.co/grKBYc3/x.png" class="invisible" alt="X logo" *ngIf="!collapse" (click)="collapseMenu()"/>
+        <ul class="visible">
+          <li (click)="sectionSelected('about')">about</li>
+          <li (click)="sectionSelected('experiences')">experiences</li>
+          <li (click)="sectionSelected('blog')">blog</li>
+          <li (click)="sectionSelected('contact')">contact</li>
+        </ul>
+
+        <ul class="invisible" *ngIf="!collapse">
           <li (click)="sectionSelected('about')">about</li>
           <li (click)="sectionSelected('experiences')">experiences</li>
           <li (click)="sectionSelected('blog')">blog</li>
@@ -17,7 +26,10 @@
       </div>
 
       <div class="content-section about" *ngIf="selectedSection.about">
-        <h1>{{ greetingMessage }}</h1>
+        <div class="greeting">
+          <div class="static-text">Bo</div>
+          <div class="dynamic-text"><span>njour!</span></div>
+        </div>
         <div class="personal-desc">
           <span>
             I am Bo, I'am a full-stack web developer based in Pleiku, Vietnam
