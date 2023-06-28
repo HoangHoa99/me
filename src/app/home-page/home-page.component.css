@@ -6,6 +6,7 @@
 }
 
 /* content css */
+
 .content {
   width: 85vw;
   max-width: 1280px;
@@ -18,6 +19,7 @@
   height: 100%;
   position: relative;
   border: 0.5px solid #333;
+  z-index: 1;
 }
 
 .content-inter:before,
@@ -28,6 +30,7 @@
   height: 300px;
   border: solid #000;
   border-width: 15px 0 0 15px;
+  z-index: -1;
 }
 
 .content-inter:before {
@@ -141,7 +144,7 @@
 
 .greeting {
   display: flex;
-  color: #EE4747;
+  color: #ee4747;
   font-size: 65px;
   font-weight: 600;
 }
@@ -152,7 +155,7 @@
   overflow: hidden;
 }
 
-.greeting span{
+.greeting span {
   position: relative;
 }
 
@@ -162,7 +165,7 @@
   height: 100%;
   width: 100%;
   background-color: #e5e5e5;
-  border-left: 5px solid #EE4747;
+  border-left: 5px solid #ee4747;
   left: 0;
   animation: typing 2s steps(12) infinite;
 }
@@ -358,6 +361,48 @@ a {
 /* responsive design */
 
 @media screen and (max-width: 420px) {
+  .top-left-logo img {
+    transition: none;
+  }
+
+  .top-left-logo img:hover {
+    transform: none;
+  }
+
+  .contact svg,
+  .contact img {
+    transition: none;
+  }
+
+  .contact svg:hover,
+  .contact img:hover {
+    transform: none;
+  }
+
+  .desc a i {
+    transition: none;
+  }
+  
+  .desc a i:hover {
+    transform: none;
+  }
+
+  .top-right-menu ul li {
+    transition: none;
+  }
+  
+  .top-right-menu ul li:hover {
+    transform: none;
+  }
+
+  .top-left-logo img {
+    transition: none;
+  }
+  
+  .top-left-logo img:hover {
+    transform: none;
+  }
+
 
   .visible {
     visibility: hidden;
@@ -401,7 +446,7 @@ a {
     z-index: 2;
     background-color: #e5e5e5;
     animation-name: appear;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
   }
 
   .top-right-menu ul li {
@@ -457,6 +502,49 @@ a {
 }
 
 @media screen and (max-width: 900px) and (min-width: 421px) {
+
+  .top-left-logo img {
+    transition: none;
+  }
+
+  .top-left-logo img:hover {
+    transform: none;
+  }
+
+  .contact svg,
+  .contact img {
+    transition: none;
+  }
+
+  .contact svg:hover,
+  .contact img:hover {
+    transform: none;
+  }
+
+  .desc a i {
+    transition: none;
+  }
+  
+  .desc a i:hover {
+    transform: none;
+  }
+
+  .top-right-menu ul li {
+    transition: none;
+  }
+  
+  .top-right-menu ul li:hover {
+    transform: none;
+  }
+
+  .top-left-logo img {
+    transition: none;
+  }
+  
+  .top-left-logo img:hover {
+    transform: none;
+  }
+
   .content {
     width: 90vw;
     height: 90vh;
