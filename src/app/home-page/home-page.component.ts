@@ -54,4 +54,10 @@ export class HomePageComponent {
   collapseMenu() {
     this.collapse = !this.collapse;
   }
+
+  returnHome() {
+    this.collapse = true;
+    this.resetSection();
+    this.selectedSection['about'] = true;
+  }
 }
