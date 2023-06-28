@@ -33,7 +33,7 @@
           <span
             >My working experiences since 2019.
             <a
-              href="https://drive.google.com/file/d/1R0XOOIrYvRnKlppyFEWu75hWcG-3LRge/view?usp=sharing"
+              href="{{urlMap.CV_LINK}}"
               target="_blank"
               rel="noopener noreferrer"
               >More detail!</a
@@ -49,7 +49,7 @@
               <span
                 >InceptionLabs
                 <a
-                  href="https://inceptionlabs.com.vn/"
+                  href="{{urlMap.INCEPTIONLABS}}"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -75,7 +75,7 @@
               <span
                 >Citynow
                 <a
-                  href="https://citynow.vn/home"
+                  href="{{urlMap.CITYNOW}}"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -101,7 +101,7 @@
               <span
                 >Tanca
                 <a
-                  href="https://tanca.io/"
+                  href="{{urlMap.TANCA}}"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -119,9 +119,194 @@
           </div>
         </div>
       </div>
-      <div class="content-section blog" *ngIf="selectedSection.blog">blog</div>
+      <div class="content-section blog" *ngIf="selectedSection.blog">
+        <h1>Not now, mate!</h1>
+      </div>
       <div class="content-section contact" *ngIf="selectedSection.contact">
-        contact
+        <div class="contact-content">
+          <div class="view-profile">
+            <h3>My profile</h3>
+            <ul>
+              <li>
+                <a href="{{ urlMap.LINKEDIN }}" target="_blank" rel="noopener noreferrer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="72"
+                    height="72"
+                    viewBox="0 0 72 72"
+                    id="linkedin"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                      <rect width="72" height="72" fill="#117EB8" rx="4"></rect>
+                      <path
+                        fill="#FFF"
+                        d="M13.139 27.848h9.623V58.81h-9.623V27.848zm4.813-15.391c3.077 0 5.577 2.5 5.577 5.577 0 3.08-2.5 5.581-5.577 5.581a5.58 5.58 0 1 1 0-11.158zm10.846 15.39h9.23v4.231h.128c1.285-2.434 4.424-5 9.105-5 9.744 0 11.544 6.413 11.544 14.75V58.81h-9.617V43.753c0-3.59-.066-8.209-5-8.209-5.007 0-5.776 3.911-5.776 7.95V58.81h-9.615V27.848z"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="repositories">
+            <h3>What I did?</h3>
+            <ul>
+              <li>
+                <a href="{{ urlMap.GITHUB }}" target="_blank" rel="noopener noreferrer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1"
+                    viewBox="0 0 24 24"
+                    id="github"
+                  >
+                    <path
+                      d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="{{ urlMap.LEETCODE }}" target="_blank" rel="noopener noreferrer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    id="leetcode"
+                  >
+                    <path
+                      fill="#B3B1B0"
+                      d="M22 14.355c0-.742-.564-1.346-1.26-1.346H10.676c-.696 0-1.26.604-1.26 1.346s.563 1.346 1.26 1.346H20.74c.696.001 1.26-.603 1.26-1.346z"
+                    ></path>
+                    <path
+                      fill="#E7A41F"
+                      d="m3.482 18.187 4.313 4.361c.973.979 2.318 1.452 3.803 1.452 1.485 0 2.83-.512 3.805-1.494l2.588-2.637c.51-.514.492-1.365-.039-1.9-.531-.535-1.375-.553-1.884-.039l-2.676 2.607c-.462.467-1.102.662-1.809.662s-1.346-.195-1.81-.662l-4.298-4.363c-.463-.467-.696-1.15-.696-1.863 0-.713.233-1.357.696-1.824l4.285-4.38c.463-.467 1.116-.645 1.822-.645s1.346.195 1.809.662l2.676 2.606c.51.515 1.354.497 1.885-.038.531-.536.549-1.387.039-1.901l-2.588-2.636a4.994 4.994 0 0 0-2.392-1.33l-.034-.007 2.447-2.503c.512-.514.494-1.366-.037-1.901-.531-.535-1.376-.552-1.887-.038l-10.018 10.1C2.509 11.458 2 12.813 2 14.311c0 1.498.509 2.896 1.482 3.876z"
+                    ></path>
+                    <path
+                      fill="#070706"
+                      d="M8.115 22.814a2.109 2.109 0 0 1-.474-.361c-1.327-1.333-2.66-2.66-3.984-3.997-1.989-2.008-2.302-4.937-.786-7.32a6 6 0 0 1 .839-1.004L13.333.489c.625-.626 1.498-.652 2.079-.067.56.563.527 1.455-.078 2.066-.769.776-1.539 1.55-2.309 2.325-.041.122-.14.2-.225.287-.863.876-1.75 1.729-2.601 2.618-.111.116-.262.186-.372.305-1.423 1.423-2.863 2.83-4.266 4.272-1.135 1.167-1.097 2.938.068 4.127 1.308 1.336 2.639 2.65 3.961 3.974.067.067.136.132.204.198.468.303.474 1.25.183 1.671-.321.465-.74.75-1.333.728-.199-.006-.363-.086-.529-.179z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class=".social-contact">
+            <h3>Reach me at</h3>
+            <ul>
+              <li>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to={{ urlMap.GMAIL }}" target="_blank" rel="noopener noreferrer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    data-name="Layer 1"
+                    viewBox="0 0 32 32"
+                    id="gmail"
+                  >
+                    <path
+                      fill="#ea4435"
+                      d="M16.58,19.1068l-12.69-8.0757A3,3,0,0,1,7.1109,5.97l9.31,5.9243L24.78,6.0428A3,3,0,0,1,28.22,10.9579Z"
+                    ></path>
+                    <path
+                      fill="#00ac47"
+                      d="M25.5,5.5h4a0,0,0,0,1,0,0v18a3,3,0,0,1-3,3h0a3,3,0,0,1-3-3V7.5a2,2,0,0,1,2-2Z"
+                      transform="rotate(180 26.5 16)"
+                    ></path>
+                    <path
+                      fill="#ffba00"
+                      d="M29.4562,8.0656c-.0088-.06-.0081-.1213-.0206-.1812-.0192-.0918-.0549-.1766-.0823-.2652a2.9312,2.9312,0,0,0-.0958-.2993c-.02-.0475-.0508-.0892-.0735-.1354A2.9838,2.9838,0,0,0,28.9686,6.8c-.04-.0581-.09-.1076-.1342-.1626a3.0282,3.0282,0,0,0-.2455-.2849c-.0665-.0647-.1423-.1188-.2146-.1771a3.02,3.02,0,0,0-.24-.1857c-.0793-.0518-.1661-.0917-.25-.1359-.0884-.0461-.175-.0963-.267-.1331-.0889-.0358-.1837-.0586-.2766-.0859s-.1853-.06-.2807-.0777a3.0543,3.0543,0,0,0-.357-.036c-.0759-.0053-.1511-.0186-.2273-.018a2.9778,2.9778,0,0,0-.4219.0425c-.0563.0084-.113.0077-.1689.0193a33.211,33.211,0,0,0-.5645.178c-.0515.022-.0966.0547-.1465.0795A2.901,2.901,0,0,0,23.5,8.5v5.762l4.72-3.3043a2.8878,2.8878,0,0,0,1.2359-2.8923Z"
+                    ></path>
+                    <path
+                      fill="#4285f4"
+                      d="M5.5,5.5h0a3,3,0,0,1,3,3v18a0,0,0,0,1,0,0h-4a2,2,0,0,1-2-2V8.5a3,3,0,0,1,3-3Z"
+                    ></path>
+                    <path
+                      fill="#c52528"
+                      d="M2.5439,8.0656c.0088-.06.0081-.1213.0206-.1812.0192-.0918.0549-.1766.0823-.2652A2.9312,2.9312,0,0,1,2.7426,7.32c.02-.0475.0508-.0892.0736-.1354A2.9719,2.9719,0,0,1,3.0316,6.8c.04-.0581.09-.1076.1342-.1626a3.0272,3.0272,0,0,1,.2454-.2849c.0665-.0647.1423-.1188.2147-.1771a3.0005,3.0005,0,0,1,.24-.1857c.0793-.0518.1661-.0917.25-.1359A2.9747,2.9747,0,0,1,4.3829,5.72c.089-.0358.1838-.0586.2766-.0859s.1853-.06.2807-.0777a3.0565,3.0565,0,0,1,.357-.036c.076-.0053.1511-.0186.2273-.018a2.9763,2.9763,0,0,1,.4219.0425c.0563.0084.113.0077.169.0193a2.9056,2.9056,0,0,1,.286.0888,2.9157,2.9157,0,0,1,.2785.0892c.0514.022.0965.0547.1465.0795a2.9745,2.9745,0,0,1,.3742.21A2.9943,2.9943,0,0,1,8.5,8.5v5.762L3.78,10.9579A2.8891,2.8891,0,0,1,2.5439,8.0656Z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="skype:{{ urlMap.SKYPE }}?chat">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 28.87 28.87"
+                    id="skype"
+                  >
+                    <g data-name="Layer 2">
+                      <g data-name="Layer 1">
+                        <rect
+                          width="28.87"
+                          height="28.87"
+                          fill="#00aff0"
+                          rx="6.48"
+                          ry="6.48"
+                        ></rect>
+                        <path
+                          fill="#fff"
+                          d="M22 16.13a7.48 7.48 0 0 0 .18-1.61A7.58 7.58 0 0 0 14.52 7a7.8 7.8 0 0 0-1.3.11 4.44 4.44 0 0 0-2.35-.67 4.39 4.39 0 0 0-4.43 4.36A4.31 4.31 0 0 0 7 13a7.41 7.41 0 0 0 7.47 8.91 7.8 7.8 0 0 0 1.4-.13 4.57 4.57 0 0 0 2.09.64 4.39 4.39 0 0 0 4.42-4.36 4.3 4.3 0 0 0-.38-1.93zm0 0"
+                        ></path>
+                        <path
+                          fill="#00aff0"
+                          d="M18 17.59a2.89 2.89 0 0 1-1.29 1 5.18 5.18 0 0 1-2 .36 4.86 4.86 0 0 1-2.31-.49 3 3 0 0 1-1-.93 2 2 0 0 1-.4-1.14.73.73 0 0 1 .24-.55.86.86 0 0 1 .62-.23.76.76 0 0 1 .51.18 1.37 1.37 0 0 1 .36.53 3.38 3.38 0 0 0 .39.69 1.55 1.55 0 0 0 .59.46 2.36 2.36 0 0 0 1 .18 2.4 2.4 0 0 0 1.29-.38 1.08 1.08 0 0 0 .53-.91.92.92 0 0 0-.29-.7 1.88 1.88 0 0 0-.74-.41q-.45-.14-1.22-.3a9.46 9.46 0 0 1-1.7-.51 2.74 2.74 0 0 1-1.09-.8 2 2 0 0 1-.4-1.26 2 2 0 0 1 .43-1.27 2.66 2.66 0 0 1 1.23-.86 5.42 5.42 0 0 1 1.89-.3 5.11 5.11 0 0 1 1.51.2 3.27 3.27 0 0 1 1.05.53 2.24 2.24 0 0 1 .61.69 1.49 1.49 0 0 1 .19.7.84.84 0 0 1-.84.82.74.74 0 0 1-.5-.15 2 2 0 0 1-.37-.5 2.27 2.27 0 0 0-.62-.77 1.93 1.93 0 0 0-1.16-.28 2.13 2.13 0 0 0-1.2.3.86.86 0 0 0-.45.72.7.7 0 0 0 .15.45 1.25 1.25 0 0 0 .43.33 3.08 3.08 0 0 0 .55.21l.92.22q.8.17 1.45.38a4.62 4.62 0 0 1 1.1.5 2.14 2.14 0 0 1 .71.75 2.24 2.24 0 0 1 .26 1.11 2.41 2.41 0 0 1-.43 1.43zm0 0"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://api.whatsapp.com/send?phone={{ urlMap.WHATSAPP }}" target="_blank" rel="noopener noreferrer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    id="whatsapp"
+                    x="0"
+                    y="0"
+                    version="1.1"
+                    viewBox="0 0 100 100"
+                    xml:space="preserve"
+                  >
+                    <g id="Graphics-_x2F_-App-Icons-_x2F_-WhatsApp">
+                      <g id="Icon_6_">
+                        <linearGradient
+                          id="Background_13_"
+                          x1="50.723"
+                          x2="50.723"
+                          y1="627.233"
+                          y2="625.746"
+                          gradientTransform="matrix(60 0 0 -60 -2993 37639)"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0" stop-color="#62FA7F"></stop>
+                          <stop offset=".686" stop-color="#22CC40"></stop>
+                          <stop offset="1" stop-color="#05B723"></stop>
+                        </linearGradient>
+                        <path
+                          id="Background_7_"
+                          fill="url(#Background_13_)"
+                          d="M28.4 5H26c-2 .1-4.6.2-5.7.5-1.8.4-3.5.9-4.9 1.6-1.6.8-3.1 1.9-4.4 3.2-1.3 1.3-2.3 2.7-3.2 4.4-.7 1.4-1.3 3.1-1.6 4.8-.2 1.2-.4 3.8-.5 5.8V74c.1 2 .2 4.6.5 5.7.4 1.8.9 3.5 1.6 4.9.8 1.6 1.9 3.1 3.2 4.4 1.3 1.3 2.7 2.3 4.4 3.2 1.4.7 3.1 1.3 4.8 1.6 1.2.2 3.8.4 5.8.5h48.7c2-.1 4.6-.2 5.7-.5 1.8-.4 3.5-.9 4.9-1.6 1.6-.8 3.1-1.9 4.4-3.2 1.3-1.3 2.3-2.7 3.2-4.4.7-1.4 1.3-3.1 1.6-4.8.2-1.2.4-3.8.5-5.8V25.3c-.1-2-.2-4.6-.5-5.7-.4-1.8-.9-3.5-1.6-4.9-.8-1.6-1.9-3.1-3.2-4.4C88.4 9 87 8 85.3 7.1c-1.4-.7-3.1-1.3-4.8-1.6-1.2-.2-3.8-.4-5.8-.5H28.4z"
+                        ></path>
+                        <path
+                          id="WhatsApp-Icon"
+                          fill="#fff"
+                          d="M66.6 54.4c-.8-.4-4.8-2.3-5.5-2.6-.7-.3-1.3-.4-1.8.4s-2.1 2.6-2.5 3.1c-.5.5-.9.6-1.7.2-.8-.4-3.4-1.2-6.5-3.9-2.4-2.1-4-4.7-4.5-5.5-.5-.8 0-1.2.4-1.6.4-.4.8-.9 1.2-1.4.4-.5.5-.8.8-1.3.3-.5.1-1-.1-1.4-.2-.4-1.8-4.3-2.5-5.9-.7-1.5-1.3-1.3-1.8-1.4h-1.5c-.5 0-1.4.2-2.1 1-.7.8-2.8 2.7-2.8 6.6 0 3.9 2.9 7.6 3.3 8.2.4.5 5.7 8.5 13.7 11.9 1.9.8 3.4 1.3 4.6 1.7 1.9.6 3.7.5 5.1.3 1.5-.2 4.8-1.9 5.4-3.7.7-1.8.7-3.4.5-3.7-.4-.4-.9-.6-1.7-1M51.3 75c-4.8 0-9.4-1.3-13.5-3.7l-1-.6-10 2.6 2.7-9.7-.6-1c-2.6-4.2-4-9-4-14 0-14.5 11.9-26.3 26.5-26.3C58.3 22.3 65 25 70 30c5 5 7.7 11.6 7.7 18.6C77.7 63.1 65.8 75 51.3 75m22.5-48.8c-6-6-14-9.3-22.5-9.3-17.5 0-31.8 14.2-31.8 31.7 0 5.6 1.5 11 4.2 15.8l-4.5 16.4L36 76.4c4.6 2.5 9.9 3.9 15.2 3.9C68.7 80.3 83 66.1 83 48.6c.1-8.4-3.2-16.4-9.2-22.4"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://zalo.me/{{ urlMap.ZALO }}" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIyMzcyIiBpZD0iTGF5ZXJfMSIgdmlld0JveD0iMCAwIDQ2MC4xIDQzNi42IiB3aWR0aD0iMjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48c3R5bGU+LnN0MHtmaWxsOiNmZGZlZmV9LnN0MXtmaWxsOiMwMTgwYzd9LnN0MntmaWxsOiMwMTcyYjF9LnN0M3tmaWxsOm5vbmU7c3Ryb2tlOiMwMTgwYzc7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLW1pdGVybGltaXQ6MTB9PC9zdHlsZT48dGl0bGUvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik04Mi42IDM4MC45Yy0xLjgtLjgtMy4xLTEuNy0xLTMuNSAxLjMtMSAyLjctMS45IDQuMS0yLjggMTMuMS04LjUgMjUuNC0xNy44IDMzLjUtMzEuNSA2LjgtMTEuNCA1LjctMTguMS0yLjgtMjYuNUM2OSAyNjkuMiA0OC4yIDIxMi41IDU4LjYgMTQ1LjUgNjQuNSAxMDcuNyA4MS44IDc1IDEwNyA0Ni42YzE1LjItMTcuMiAzMy4zLTMxLjEgNTMuMS00Mi43IDEuMi0uNyAyLjktLjkgMy4xLTIuNy0uNC0xLTEuMS0uNy0xLjctLjctMzMuNyAwLTY3LjQtLjctMTAxIC4yQzI4LjMgMS43LjUgMjYuNi42IDYyLjNjLjIgMTA0LjMgMCAyMDguNiAwIDMxMyAwIDMyLjQgMjQuNyA1OS41IDU3IDYwLjcgMjcuMyAxLjEgNTQuNi4yIDgyIC4xIDIgLjEgNCAuMiA2IC4ySDI5MGMzNiAwIDcyIC4yIDEwOCAwIDMzLjQgMCA2MC41LTI3IDYwLjUtNjAuM3YtLjYtNTguNWMwLTEuNC41LTIuOS0uNC00LjQtMS44LjEtMi41IDEuNi0zLjUgMi42LTE5LjQgMTkuNS00Mi4zIDM1LjItNjcuNCA0Ni4zLTYxLjUgMjcuMS0xMjQuMSAyOS0xODcuNiA3LjItNS41LTItMTEuNS0yLjItMTcuMi0uOC04LjQgMi4xLTE2LjcgNC42LTI1IDcuMS0yNC40IDcuNi00OS4zIDExLTc0LjggNnptNzIuNS0xNjguNWMxLjctMi4yIDIuNi0zLjUgMy42LTQuOCAxMy4xLTE2LjYgMjYuMi0zMy4yIDM5LjMtNDkuOSAzLjgtNC44IDcuNi05LjcgMTAtMTUuNSAyLjgtNi42LS4yLTEyLjgtNy0xNS4yLTMtLjktNi4yLTEuMy05LjQtMS4xLTE3LjgtLjEtMzUuNy0uMS01My41IDAtMi41IDAtNSAuMy03LjQuOS01LjYgMS40LTkgNy4xLTcuNiAxMi44IDEgMy44IDQgNi44IDcuOCA3LjcgMi40LjYgNC45LjkgNy40LjggMTAuOC4xIDIxLjcgMCAzMi41LjEgMS4yIDAgMi43LS44IDMuNiAxLS45IDEuMi0xLjggMi40LTIuNyAzLjUtMTUuNSAxOS42LTMwLjkgMzkuMy00Ni40IDU4LjktMy44IDQuOS01LjggMTAuMy0zIDE2LjNzOC41IDcuMSAxNC4zIDcuNWM0LjYuMyA5LjMuMSAxNCAuMSAxNi4yIDAgMzIuMy4xIDQ4LjUtLjEgOC42LS4xIDEzLjItNS4zIDEyLjMtMTMuMy0uNy02LjMtNS05LjYtMTMtOS43LTE0LjEtLjEtMjguMiAwLTQzLjMgMHptMTE2LTUyLjZjLTEyLjUtMTAuOS0yNi4zLTExLjYtMzkuOC0zLjYtMTYuNCA5LjYtMjIuNCAyNS4zLTIwLjQgNDMuNSAxLjkgMTcgOS4zIDMwLjkgMjcuMSAzNi42IDExLjEgMy42IDIxLjQgMi4zIDMwLjUtNS4xIDIuNC0xLjkgMy4xLTEuNSA0LjguNiAzLjMgNC4yIDkgNS44IDE0IDMuOSA1LTEuNSA4LjMtNi4xIDguMy0xMS4zLjEtMjAgLjItNDAgMC02MC0uMS04LTcuNi0xMy4xLTE1LjQtMTEuNS00LjMuOS02LjcgMy44LTkuMSA2Ljl6bTY5LjMgMzcuMWMtLjQgMjUgMjAuMyA0My45IDQ2LjMgNDEuMyAyMy45LTIuNCAzOS40LTIwLjMgMzguNi00NS42LS44LTI1LTE5LjQtNDIuMS00NC45LTQxLjMtMjMuOS43LTQwLjggMTkuOS00MCA0NS42em0tOC44LTE5LjljMC0xNS43LjEtMzEuMyAwLTQ3IDAtOC01LjEtMTMtMTIuNy0xMi45LTcuNC4xLTEyLjMgNS4xLTEyLjQgMTIuOC0uMSA0LjcgMCA5LjMgMCAxNHY3OS41YzAgNi4yIDMuOCAxMS42IDguOCAxMi45IDYuOSAxLjkgMTQtMi4yIDE1LjgtOS4xLjMtMS4yLjUtMi40LjQtMy43LjItMTUuNS4xLTMxIC4xLTQ2LjV6Ii8+PHBhdGggY2xhc3M9InN0MSIgZD0iTTEzOS41IDQzNi4yYy0yNy4zIDAtNTQuNy45LTgyLS4xLTMyLjMtMS4zLTU3LTI4LjQtNTctNjAuNyAwLTEwNC4zLjItMjA4LjYgMC0zMTNDLjUgMjYuNyAyOC40IDEuOCA2MC41LjljMzMuNi0uOSA2Ny4zLS4yIDEwMS0uMi42IDAgMS40LS4zIDEuNy43LS4yIDEuOC0yIDItMy4xIDIuNy0xOS44IDExLjYtMzcuOSAyNS41LTUzLjEgNDIuNy0yNS4xIDI4LjQtNDIuNSA2MS00OC40IDk4LjktMTAuNCA2Ni45IDEwLjUgMTIzLjcgNTcuOCAxNzEuMSA4LjQgOC41IDkuNSAxNS4xIDIuOCAyNi41LTguMSAxMy43LTIwLjQgMjMtMzMuNSAzMS41LTEuNC44LTIuOCAxLjgtNC4yIDIuNy0yLjEgMS44LS44IDIuNyAxIDMuNS40LjkuOSAxLjcgMS41IDIuNSAxMS41IDEwLjIgMjIuNCAyMS4xIDMzLjcgMzEuNSA1LjMgNC45IDEwLjYgMTAgMTUuNyAxNS4xIDIuMSAxLjkgNS42IDIuNSA2LjEgNi4xeiIvPjxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMzkuNSA0MzYuMmMtLjUtMy41LTQtNC4xLTYuMS02LjItNS4xLTUuMi0xMC40LTEwLjItMTUuNy0xNS4xLTExLjMtMTAuNC0yMi4yLTIxLjMtMzMuNy0zMS41LS42LS44LTEuMS0xLjYtMS41LTIuNSAyNS41IDUgNTAuNCAxLjYgNzQuOS01LjkgOC4zLTIuNSAxNi42LTUgMjUtNy4xIDUuNy0xLjUgMTEuNy0xLjIgMTcuMi44IDYzLjQgMjEuOCAxMjYgMTkuOCAxODcuNi03LjIgMjUuMS0xMS4xIDQ4LTI2LjcgNjcuNC00Ni4yIDEtMSAxLjctMi41IDMuNS0yLjYuOSAxLjQuNCAyLjkuNCA0LjR2NTguNWMuMiAzMy40LTI2LjYgNjAuNi02MCA2MC45aC0uNWMtMzYgLjItNzIgMC0xMDggMEgxNDUuNWMtMi0uMi00LS4zLTYtLjN6Ii8+PHBhdGggY2xhc3M9InN0MSIgZD0iTTE1NS4xIDIxMi40YzE1LjEgMCAyOS4zLS4xIDQzLjQgMCA3LjkuMSAxMi4yIDMuNCAxMyA5LjcuOSA3LjktMy43IDEzLjItMTIuMyAxMy4zLTE2LjIuMi0zMi4zLjEtNDguNS4xLTQuNyAwLTkuMy4yLTE0LS4xLTUuOC0uMy0xMS41LTEuNS0xNC4zLTcuNXMtLjgtMTEuNCAzLTE2LjNjMTUuNC0xOS42IDMwLjktMzkuMyA0Ni40LTU4LjkuOS0xLjIgMS44LTIuNCAyLjctMy41LTEtMS43LTIuNC0uOS0zLjYtMS0xMC44LS4xLTIxLjcgMC0zMi41LS4xLTIuNSAwLTUtLjMtNy40LS44LTUuNy0xLjMtOS4yLTctNy45LTEyLjYuOS0zLjggMy45LTYuOSA3LjctNy44IDIuNC0uNiA0LjktLjkgNy40LS45IDE3LjgtLjEgMzUuNy0uMSA1My41IDAgMy4yLS4xIDYuMy4zIDkuNCAxLjEgNi44IDIuMyA5LjcgOC42IDcgMTUuMi0yLjQgNS43LTYuMiAxMC42LTEwIDE1LjUtMTMuMSAxNi43LTI2LjIgMzMuMy0zOS4zIDQ5LjgtMS4xIDEuMy0yLjEgMi42LTMuNyA0Ljh6Ii8+PHBhdGggY2xhc3M9InN0MSIgZD0iTTI3MS4xIDE1OS44YzIuNC0zLjEgNC45LTYgOS02LjggNy45LTEuNiAxNS4zIDMuNSAxNS40IDExLjUuMyAyMCAuMiA0MCAwIDYwIDAgNS4yLTMuNCA5LjgtOC4zIDExLjMtNSAxLjktMTAuNy40LTE0LTMuOS0xLjctMi4xLTIuNC0yLjUtNC44LS42LTkuMSA3LjQtMTkuNCA4LjctMzAuNSA1LjEtMTcuOC01LjgtMjUuMS0xOS43LTI3LjEtMzYuNi0yLjEtMTguMyA0LTMzLjkgMjAuNC00My41IDEzLjYtOC4xIDI3LjQtNy40IDM5LjkgMy41em0tMzUuNCAzNi41Yy4yIDQuNCAxLjYgOC42IDQuMiAxMi4xIDUuNCA3LjIgMTUuNyA4LjcgMjMgMy4zIDEuMi0uOSAyLjMtMiAzLjMtMy4zIDUuNi03LjYgNS42LTIwLjEgMC0yNy43LTIuOC0zLjktNy4yLTYuMi0xMS45LTYuMy0xMS0uNy0xOC43IDcuOC0xOC42IDIxLjl6TTM0MC40IDE5Ni45Yy0uOC0yNS43IDE2LjEtNDQuOSA0MC4xLTQ1LjYgMjUuNS0uOCA0NC4xIDE2LjMgNDQuOSA0MS4zLjggMjUuMy0xNC43IDQzLjItMzguNiA0NS42LTI2LjEgMi42LTQ2LjgtMTYuMy00Ni40LTQxLjN6bTI1LjEtMi40Yy0uMiA1IDEuMyA5LjkgNC4zIDE0IDUuNSA3LjIgMTUuOCA4LjYgMjMgMyAxLjEtLjggMi0xLjggMi45LTIuOCA1LjgtNy42IDUuOC0yMC40LjEtMjgtMi44LTMuOC03LjItNi4yLTExLjktNi4zLTEwLjgtLjYtMTguNCA3LjYtMTguNCAyMC4xek0zMzEuNiAxNzdjMCAxNS41LjEgMzEgMCA0Ni41LjEgNy4xLTUuNSAxMy0xMi42IDEzLjItMS4yIDAtMi41LS4xLTMuNy0uNC01LTEuMy04LjgtNi42LTguOC0xMi45di03OS41YzAtNC43LS4xLTkuMyAwLTE0IC4xLTcuNyA1LTEyLjcgMTIuNC0xMi43IDcuNi0uMSAxMi43IDQuOSAxMi43IDEyLjkuMSAxNS42IDAgMzEuMyAwIDQ2Ljl6Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTIzNS43IDE5Ni4zYy0uMS0xNC4xIDcuNi0yMi42IDE4LjUtMjIgNC43LjIgOS4xIDIuNSAxMS45IDYuNCA1LjYgNy41IDUuNiAyMC4xIDAgMjcuNy01LjQgNy4yLTE1LjcgOC43LTIzIDMuMy0xLjItLjktMi4zLTItMy4zLTMuMy0yLjUtMy41LTMuOS03LjctNC4xLTEyLjF6TTM2NS41IDE5NC41YzAtMTIuNCA3LjYtMjAuNyAxOC40LTIwLjEgNC43LjEgOS4xIDIuNSAxMS45IDYuMyA1LjcgNy42IDUuNyAyMC41LS4xIDI4LTUuNiA3LjEtMTYgOC4zLTIzLjEgMi43LTEuMS0uOC0yLTEuOC0yLjgtMi45LTMtNC4xLTQuNC05LTQuMy0xNHoiLz48cGF0aCBjbGFzcz0ic3QzIiBkPSJNNjYgMWgzMjguMWMzNS45IDAgNjUgMjkuMSA2NSA2NXYzMDNjMCAzNS45LTI5LjEgNjUtNjUgNjVINjZjLTM1LjkgMC02NS0yOS4xLTY1LTY1VjY2QzEgMzAuMSAzMC4xIDEgNjYgMXoiLz48L3N2Zz4="
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>

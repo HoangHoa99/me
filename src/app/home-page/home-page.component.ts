@@ -11,6 +11,20 @@ export class HomePageComponent {
   greetingMessage: string = 'Bo';
   interval: any;
 
+  urlMap = {
+    "LINKEDIN": "https://www.linkedin.com/in/thaihoahoang/",
+    "GITHUB": "https://github.com/HoangHoa99",
+    "LEETCODE": "https://leetcode.com/HoangHoa99/",
+    "GMAIL": "hoangthaihoa2122@gmail.com",
+    "ZALO": "0869962279",
+    "WHATSAPP": "0869962279",
+    "SKYPE": "live:hoangthaihoa2122",
+    "INCEPTIONLABS": "https://inceptionlabs.com.vn/",
+    "CITYNOW": "https://citynow.vn/home",
+    "TANCA": "https://tanca.io/",
+    "CV_LINK": "https://drive.google.com/file/d/1QN6B-YRDEcNccPGEF2ReG5nc3CkRx2i8/view?usp=sharing"
+  };
+
   ngOnInit() {
     this.sectionSelected('about');
   }
