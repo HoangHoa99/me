@@ -24,7 +24,7 @@ export class HomePageComponent {
     "INCEPTIONLABS": "https://inceptionlabs.com.vn/",
     "CITYNOW": "https://citynow.vn/home",
     "TANCA": "https://tanca.io/",
-    "CV_LINK": "https://drive.google.com/file/d/1wke2KdpiwpsvKDLI7yojAPJeDwsHsRB_/view?usp=sharing"
+    "CV_LINK": "https://drive.google.com/file/d/1hnKtiFDiHOt9Xv2IC0YPqNhWtjz0AlOg/view?usp=sharing"
   };
 
   ngOnInit() {
