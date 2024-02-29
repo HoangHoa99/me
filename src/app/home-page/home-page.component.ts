@@ -25,7 +25,7 @@ export class HomePageComponent {
     "CITYNOW": "https://citynow.vn/home",
     "TANCA": "https://tanca.io/",
     "SLASH": "https://slash.co/",
-    "CV_LINK": "https://drive.google.com/file/d/1HTkILn_vMUqp_0iNnjS3qA_mWyjxWjSu/view?usp=sharing"
+    "CV_LINK": "https://drive.google.com/file/d/1L2lsb1DhX5sE_bpldKqsE8cPOf-yyb6Z/view?usp=drive_link"
   };
 
   ngOnInit() {
